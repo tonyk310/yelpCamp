@@ -21,7 +21,13 @@ var commentRoutes	= require("./routes/comments.js");
 var indexRoutes		= require("./routes/index.js");
 
 
-mongoose.connect("mongodb://localhost:27017/yelpcamp10");
+// mongoose.connect("mongodb://localhost:27017/yelpcamp10");
+mongoose.connect("mongodb://tony:password1@ds235411.mlab.com:35411/yelpcamp");
+
+
+
+
+
 // tell express to use body-parser
 app.use(bodyParser.urlencoded({ extended:true }));
 app.set("view engine", "ejs");

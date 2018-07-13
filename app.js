@@ -21,8 +21,11 @@ var commentRoutes	= require("./routes/comments.js");
 var indexRoutes		= require("./routes/index.js");
 
 
+// $ export DATABASEURL=mongodb://localhost:27017/yelpcamp10
+console.log(process.env.DATABASEURL);
 // mongoose.connect("mongodb://localhost:27017/yelpcamp10");
-mongoose.connect("mongodb://tony:password1@ds235411.mlab.com:35411/yelpcamp");
+mongoose.connect(process.env.DATABASEURL);
+// mongoose.connect("mongodb://tony:password1@ds235411.mlab.com:35411/yelpcamp");
 
 
 

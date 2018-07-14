@@ -24,7 +24,7 @@ var indexRoutes		= require("./routes/index.js");
 // $ export DATABASEURL=mongodb://localhost:27017/yelpcamp10
 console.log(process.env.DATABASEURL);
 // mongoose.connect("mongodb://localhost:27017/yelpcamp10");
-mongoose.connect(process.env.DATABASEURL);
+mongoose.connect(process.env.DATABASEURL || "mongodb://tony:password1@ds235411.mlab.com:35411/yelpcamp");
 // mongoose.connect("mongodb://tony:password1@ds235411.mlab.com:35411/yelpcamp");
 
 

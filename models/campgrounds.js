@@ -17,7 +17,7 @@ var campgroundSchema = new mongoose.Schema({
 		},
 		username: String
 	},
-	price: String
+	price: Number
 });
 
 var Campground = mongoose.model("campground", campgroundSchema);

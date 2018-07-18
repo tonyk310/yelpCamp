@@ -17,7 +17,7 @@
 			</div>
 
 			<div class="form-group">
-				<input class="form-control" type="text" name="campground[price]" placeholder="price" value="<%= campground.description %>">
+				<input class="form-control" type="number" name="campground[price]" placeholder="price" step="1" min="0" required value="<%= campground.price %>">
 			</div>
 
 			<div class="form-group">

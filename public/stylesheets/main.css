@@ -1,6 +1,6 @@
-body {
+/*body {
 	background: pink;
-}
+}*/
 
 .image-thumb {
 	width: 100%;
@@ -30,4 +30,13 @@ body {
 
 .delete-form {
 	display: inline;
+}
+
+.homeH1 {
+	text-align: center;
+}
+
+.homeForm {
+	width: 30%;
+	margin: 25px auto;
 }
